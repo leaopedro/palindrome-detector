@@ -1,0 +1,64 @@
+@fundo: #F1F1F1;
+@branco: #fff;
+@border: #d9d9d9;
+@azul: #4387fd;
+@verde: #34a853;
+@vermelho: #ea4335;
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+.app-container{
+  .main-panel{
+    width: 400px;
+    background-color: @fundo;
+    height: auto;
+    border: 1px solid @azul;
+    position: absolute;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    h1{
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 5px;
+    }
+    .input-container{
+      margin-top: 20px;
+      input{
+        width: 90%;
+        border: 2px solid @border;
+        outline: none!important;
+        height: 35px;
+        font-size: 21px;
+        padding: 0 10px;
+
+      }
+      .status{
+        margin: 10px auto;
+        font-size: 16px;
+        height:15px;
+        &.palindrome{
+          color: @verde;
+        }
+        &.not-palindrome{
+          color: @vermelho;
+        }
+      }
+      .instructions{
+        font-size: 13px;
+      }
+    }
+    &.palindrome{
+      border: 1px solid @verde;
+    }
+    &.not-palindrome{
+      border: 1px solid @vermelho;
+    }
+    @media only screen and (max-width: 500px){
+      width: 90%;
+    }
+  }
+}

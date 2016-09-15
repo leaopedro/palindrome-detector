@@ -1,0 +1,56 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+.app-container .main-panel {
+  width: 400px;
+  background-color: #F1F1F1;
+  height: auto;
+  border: 1px solid #4387fd;
+  position: absolute;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.app-container .main-panel h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.app-container .main-panel .input-container {
+  margin-top: 20px;
+}
+.app-container .main-panel .input-container input {
+  width: 90%;
+  border: 2px solid #d9d9d9;
+  outline: none!important;
+  height: 35px;
+  font-size: 21px;
+  padding: 0 10px;
+}
+.app-container .main-panel .input-container .status {
+  margin: 10px auto;
+  font-size: 16px;
+  height: 15px;
+}
+.app-container .main-panel .input-container .status.palindrome {
+  color: #34a853;
+}
+.app-container .main-panel .input-container .status.not-palindrome {
+  color: #ea4335;
+}
+.app-container .main-panel .input-container .instructions {
+  font-size: 13px;
+}
+.app-container .main-panel.palindrome {
+  border: 1px solid #34a853;
+}
+.app-container .main-panel.not-palindrome {
+  border: 1px solid #ea4335;
+}
+@media only screen and (max-width: 500px) {
+  .app-container .main-panel {
+    width: 90%;
+  }
+}
