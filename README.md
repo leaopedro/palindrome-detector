@@ -1,4 +1,4 @@
-# Palindrome Detector
+# [Palindrome Detector](https://leaopedro.github.io/palindrome-detector/release/)
 
 A straightforward application that determines whether a user-entered phrase is a palindrome.
 
